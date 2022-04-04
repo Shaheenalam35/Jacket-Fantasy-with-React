@@ -1,0 +1,12 @@
+.btn {
+  background-color: purple;
+  padding: 10px 20px;
+  margin: 2px;
+  border: none;
+  border-radius: 8px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

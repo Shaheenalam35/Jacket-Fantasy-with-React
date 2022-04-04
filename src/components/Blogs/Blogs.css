@@ -1,0 +1,16 @@
+.blogs-details {
+  width: 90%;
+  margin: auto;
+  background-color: aliceblue;
+}
+
+.question-ans {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.question-ans h4 {
+  color: blueviolet;
+  font-weight: 500;
+}
