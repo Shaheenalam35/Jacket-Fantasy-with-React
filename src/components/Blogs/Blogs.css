@@ -1,6 +1,8 @@
 .blogs-details {
   width: 90%;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: aliceblue;
 }
 
@@ -12,5 +14,9 @@
 
 .question-ans h4 {
   color: blueviolet;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.question-ans p {
+  text-align: left;
 }
