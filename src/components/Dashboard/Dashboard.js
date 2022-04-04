@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import BarCharts from "../BarCharts/BarCharts";
+import LineCharts from "../LineCharts/LineCharts";
 
 const Dashboard = () => {
-    return (
-        <div>
-            <h2>This dash Board</h2>
-        </div>
-    );
+  return (
+    <div>
+      <LineCharts></LineCharts>
+      <BarCharts></BarCharts>
+    </div>
+  );
 };
 
 export default Dashboard;
