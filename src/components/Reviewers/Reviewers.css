@@ -1,3 +1,10 @@
+.reviews-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
 .reviewer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

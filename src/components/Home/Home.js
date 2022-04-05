@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Reviewer from "../Reviewer/Reviewer";
+import UseReviewers from "../UseReviewers/UseReviewers";
 import "./Home.css";
 
 const Home = () => {
+  const [reviewers, setReviewers] = UseReviewers();
   return (
     <div>
       <div className="home-container">
@@ -30,9 +33,13 @@ const Home = () => {
           <img src="https://i.pinimg.com/736x/c4/59/1e/c4591e399a7d6b5c30ec7c877f81984e.jpg" />
         </div>
       </div>
-      <div className="review-container">
+      <div className="reviews-container">
         <h1 className="review-title">Customer Reviews</h1>
-        <div></div>
+        <div className="reviewer-container">
+          {reviewers.slice(0, 3).map((reviewer) => (
+            <Reviewer key={reviewer._id} reviewer={reviewer}></Reviewer>
+          ))}
+        </div>
         <div>
           <button className="btn">
             <Link className="link" to="/reviews">
