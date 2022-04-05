@@ -6,7 +6,9 @@
 }
 
 .reviewer-card {
+  margin: auto;
   width: 400px;
+  height: 500px;
   background-color: rgb(212, 221, 237);
   border: 2px solid rgba(211, 211, 211, 0.378);
   border-radius: 10px;
