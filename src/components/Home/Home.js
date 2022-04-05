@@ -35,13 +35,13 @@ const Home = () => {
       </div>
       <div className="reviews-container">
         <h1 className="review-title">Customer Reviews</h1>
-        <div className="reviewer-container">
+        <div className="review-part">
           {reviewers.slice(0, 3).map((reviewer) => (
             <Reviewer key={reviewer._id} reviewer={reviewer}></Reviewer>
           ))}
         </div>
-        <div>
-          <button className="btn">
+        <div className="see-all-btn">
+          <button className="reviews-btn">
             <Link className="link" to="/reviews">
               See All Reviews
             </Link>

@@ -7,7 +7,7 @@ const Reviewers = () => {
   const [reviewers, setReviewers] = UseReviewers();
 
   return (
-    <div className="reviews-container">
+    <div className="reviewers-container">
       <h1 className="review-title">Customer Reviews with Details !</h1>
       <div className="reviewer-container">
         {reviewers.map((reviewer) => (
