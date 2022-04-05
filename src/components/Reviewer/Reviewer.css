@@ -1,0 +1,13 @@
+.reviewer-container img {
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.reviewer-container {
+  width: 400px;
+  background-color: rgb(212, 221, 237);
+  border: 2px solid rgba(211, 211, 211, 0.378);
+  border-radius: 10px;
+  padding: 20px;
+}

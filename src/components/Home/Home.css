@@ -1,3 +1,26 @@
+.home-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.home-img {
+  margin-left: 30px;
+}
+
+.home-img img {
+  width: 400px;
+  height: 500px;
+}
+
+.home-title {
+  color: goldenrod;
+  font-size: 48px;
+}
+
 .btn {
   background-color: purple;
   padding: 10px 20px;
@@ -6,7 +29,31 @@
   border-radius: 8px;
 }
 
+.btn:hover {
+  background-color: blue;
+}
+.btn-live-demo {
+  background-color: lightgreen;
+  padding: 15px 15px;
+  margin: 2px;
+  border: none;
+  border-radius: 8px;
+}
+.btn-live-demo:hover {
+  background-color: blue;
+}
+
 .link {
   text-decoration: none;
   color: white;
+  font-size: 18px;
+}
+
+.review-title {
+  text-align: center;
+  color: coral;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 42px;
 }

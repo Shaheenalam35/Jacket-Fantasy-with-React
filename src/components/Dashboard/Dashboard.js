@@ -4,9 +4,13 @@ import LineCharts from "../LineCharts/LineCharts";
 
 const Dashboard = () => {
   return (
-    <div>
-      <LineCharts></LineCharts>
-      <BarCharts></BarCharts>
+    <div className="dashboard">
+      <p>
+        <LineCharts></LineCharts>
+      </p>
+      <p>
+        <BarCharts></BarCharts>
+      </p>
     </div>
   );
 };
