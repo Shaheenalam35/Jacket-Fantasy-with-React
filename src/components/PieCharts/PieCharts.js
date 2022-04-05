@@ -1,7 +1,7 @@
 import React from "react";
-import { Bar, BarChart, Legend, Tooltip, XAxis, YAxis } from "recharts";
+import { Pie, PieChart } from "recharts";
 
-const BarCharts = () => {
+const PieCharts = () => {
   const data = [
     {
       month: "Mar",
@@ -40,17 +40,32 @@ const BarCharts = () => {
       revenue: 61000,
     },
   ];
+
   return (
     <div>
-      <BarChart width={500} height={300} data={data}>
-        <XAxis dataKey={"month"}></XAxis>
-        <YAxis dataKey={"sell"}></YAxis>
-        <Tooltip></Tooltip>
-        <Legend></Legend>
-        <Bar dataKey={"sell"} fill="#8884d8"></Bar>
-      </BarChart>
+      <PieChart width={500} height={300}></PieChart>
+      <Pie
+        data={data}
+        dataKey="revenue"
+        nameKey="month"
+        cx="50%"
+        cy="50%"
+        outerRadius={50}
+        fill="#8884d8"
+      ></Pie>
+      <Pie
+        data={data}
+        dataKey="sell"
+        nameKey="month"
+        cx="50%"
+        cy="50%"
+        innerRadius={60}
+        outerRadius={80}
+        fill="#82ca9d"
+        label
+      />
     </div>
   );
 };
 
-export default BarCharts;
+export default PieCharts;
